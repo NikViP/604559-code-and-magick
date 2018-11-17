@@ -1,6 +1,6 @@
 # Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
 
-* Студент: [Николай Пушкарев](https://up.htmlacademy.ru/javascript/16/user/604559).
+* Студент: [Николай Пушкарев ](https://up.htmlacademy.ru/javascript/16/user/604559).
 * Наставник: `Роман Кунин`.
 
 ---
