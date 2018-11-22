@@ -51,4 +51,3 @@ window.renderStatistics = function (ctx, players, times) {
   ctx.fillStyle = '#1D19B7';
   ctx.fillRect(STAT_X + 270, STAT_Y, BAR_WIDTH, 120);
 };
-
