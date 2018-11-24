@@ -6,7 +6,7 @@ var CLOUD_Y = 10;
 var STAT_X = CLOUD_X + 35;
 var STAT_Y = CLOUD_Y + 100;
 
-var renderCloud = function(ctx, CLOUD_X, CLOUD_Y, color) {
+var renderCloud = function (ctx, x, y, color) {
   ctx.fillStyle = color;
   ctx.beginPath();
   ctx.moveTo(CLOUD_X, CLOUD_Y);
