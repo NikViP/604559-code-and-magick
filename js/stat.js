@@ -32,25 +32,25 @@ window.renderStatistics = function (ctx, players, times) {
   ctx.fillText('Список результатов:', 230, 50);
 
   ctx.fillStyle = '#333';
-  ctx.fillText(players[0], STAT_X + 15, STAT_Y - 20);
+  ctx.fillText(players[0], STAT_X + 10, STAT_Y - 20);
   ctx.fillStyle = 'rgba(255, 0, 0, 1)';
   ctx.fillRect(STAT_X, STAT_Y, BAR_WIDTH, 150);
-  ctx.fillText(times [0], STAT_X + 10, STAT_Y - 40);
+  ctx.fillText(times [0], STAT_X, STAT_Y - 40);
 
   ctx.fillStyle = '#333';
-  ctx.fillText(players[2], STAT_X + 75, STAT_Y - 20);
+  ctx.fillText(players[2], STAT_X + 90, STAT_Y - 20);
   ctx.fillStyle = '#1D19B7';
   ctx.fillRect(STAT_X + 90, STAT_Y, BAR_WIDTH, 110);
   ctx.fillText(times[2], STAT_X + 55, STAT_Y - 40);
 
   ctx.fillStyle = '#333';
-  ctx.fillText(players[3], STAT_X + 165, STAT_Y - 20);
+  ctx.fillText(players[3], STAT_X + 180, STAT_Y - 20);
   ctx.fillStyle = '#1D19B7';
   ctx.fillRect(STAT_X + 180, STAT_Y, BAR_WIDTH, 140);
   ctx.fillText(times[3], STAT_X + 95, STAT_Y - 40);
 
   ctx.fillStyle = '#333';
-  ctx.fillText(players[1], STAT_X + 255, STAT_Y - 20);
+  ctx.fillText(players[1], STAT_X + 270, STAT_Y - 20);
   ctx.fillStyle = '#1D19B7';
   ctx.fillRect(STAT_X + 270, STAT_Y, BAR_WIDTH, 120);
   ctx.fillText(times[1], STAT_X + 125, STAT_Y - 40);
