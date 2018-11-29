@@ -48,7 +48,7 @@ window.renderStatistics = function (ctx, names, times) {
     if (names[i] === 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
     } else {
-      ctx.fillStyle = '#110b5b';
+      ctx.fillStyle = '#110b5a';
     }
     ctx.fillText(names[i], STAT_X + BAR_STEP * i, STAT_Y);
     ctx.fillRect(STAT_X + BAR_STEP * i, STAT_Y - 20, BAR_WIDTH, -(150 / maxHeight * times[i]));
