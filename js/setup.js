@@ -15,7 +15,16 @@ var similarWizardTemplate = document.querySelector('#similar-wizard-template')
   .content
   .querySelector('.setup-similar-item');
 
-var WIZARD_NAMES = ['Дамблдор', 'Волдеморт', 'Доктор Стрендж', 'Гарри Поттер'];
+var createWizardNames = function () {
+  var wizardNames = firstName[i] + surName[i];
+};
+
+var createWizards = ['name', 'coatColor', 'eyesColor'
+
+]
+
+
+/*var CREATE_WIZARD_NAMES = ['Дамблдор', 'Волдеморт', 'Доктор Стрендж', 'Гарри Поттер'];
 
 var wizards = [
   {
@@ -34,7 +43,7 @@ var wizards = [
     name: WIZARD_NAMES[3],
     coatColor: 'rgb(127, 127, 127)'
   }
-];
+];*/
 
 var renderWizard = function (wizard) {
   var wizardElement = similarWizardTemplate.cloneNode(true);
@@ -47,7 +56,7 @@ var renderWizard = function (wizard) {
 
 var fragment = document.createDocumentFragment();
 for (var i = 0; i < wizards.length; i++) {
-  fragment.appendChild(renderWizard(wizards[i]));*
+  fragment.appendChild(renderWizard(wizards[i]));
 }
 similarListElement.appendChild(fragment);
 
