@@ -6,6 +6,7 @@ var CLOUD_Y = 30;
 var STAT_X = CLOUD_X + 35;
 var STAT_Y = CLOUD_Y + 250;
 var BAR_STEP = 90;
+var MY_NAME = 'Вы';
 
 var renderCloud = function (ctx, x, y, color) {
   ctx.fillStyle = color;
@@ -35,8 +36,7 @@ var getMaxOfArray = function (arr) {
 
 window.renderStatistics = function (ctx, names, times) {
   renderCloud(ctx, CLOUD_X, CLOUD_Y, 'rgba(0, 0, 0, 0.7)');
-  ctx.translate(-10, -10);
-  renderCloud(ctx, CLOUD_X, CLOUD_Y, '#fff');
+  renderCloud(ctx, CLOUD_X - 10, CLOUD_Y - 10, '#fff');
 
   ctx.font = '16px "PT Mono"';
   ctx.fillStyle = '#333';
@@ -45,7 +45,7 @@ window.renderStatistics = function (ctx, names, times) {
 
   var maxHeight = getMaxOfArray(times);
   for (var i = 0; i < times.length; i++) {
-    if (names[i] === 'Вы') {
+    if (names[i] === MY_NAME) {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
     } else {
       ctx.fillStyle = '#110b5a';
