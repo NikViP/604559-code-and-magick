@@ -1,6 +1,6 @@
 'use strict';
 
-var getWizards = function () {
+/*var getWizards = function () {
   var firstName = ['Иван', 'Хуан', 'Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'];
   var surName = ['даМарья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'];
   var coatColor = ['rgb(101, 137, 164)', 'rgb(241, 43, 107)', 'rgb(146, 100, 161)', 'rgb(56, 159, 117)', 'rgb(215, 210, 55)', 'rgb(0, 0, 0)'];
@@ -21,6 +21,44 @@ var getWizards = function () {
     currentWizard.eyesColor = eyesColor[eyesColorRand];
     catalogWizards[i] = currentWizard;
   }
+
+  return catalogWizards;
+};*/
+
+var getWizards = function () {
+  var firstName = ['Иван', 'Хуан', 'Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'];
+  var surName = ['даМарья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'];
+  var coatColor = ['rgb(101, 137, 164)', 'rgb(241, 43, 107)', 'rgb(146, 100, 161)', 'rgb(56, 159, 117)', 'rgb(215, 210, 55)', 'rgb(0, 0, 0)'];
+  var eyesColor = ['black', 'red', 'blue', 'yellow', 'green'];
+
+  var catalogWizards = [];
+
+  for (var i = 0; i <= 3; i++) {
+    var currentWizard = {};
+
+    var firstNameRand = function (min, max) {
+      return Math.floor(Math.random() * (max - min + min)) + min;
+    };
+    var surNameRand = function (min, max) {
+      return Math.floor(Math.random() * (max - min + min)) + min;
+    };
+    var coatColorRand = function (min, max) {
+      return Math.floor(Math.random() * (max - min + min)) + min;
+    };
+    var eyesColorRand = function (min, max) {
+      return Math.floor(Math.random() * (max - min + min)) + min;
+    };
+
+    currentWizard.name = firstName[firstNameRand] + ' ' + surName[surNameRand];
+    currentWizard.coatColor = coatColor[coatColorRand];
+    currentWizard.eyesColor = eyesColor[eyesColorRand];
+    catalogWizards[i] = currentWizard;
+  }
+
+  /*function getRandomInt(min, max)
+  {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }*/
 
   return catalogWizards;
 };
